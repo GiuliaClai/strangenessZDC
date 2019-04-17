@@ -342,7 +342,7 @@ void AliAnalysisTaskLeading::UserExec(Option_t *)
 
   
   //Dalla TriggerMask Corrente la scrive nel Tree
-  fTriggerMask= (inputHandler->IsEventSelected());
+  fTriggerMask = (inputHandler->IsEventSelected());
   //Trigger mask filled:
   for(Int_t i=0;i<32;i++) {
     unsigned bit=(1<<i);//shift of 1 of i positions
@@ -494,7 +494,6 @@ void AliAnalysisTaskLeading::UserExec(Option_t *)
   fN2hits=0;
   fP1hits=0;
   fP2hits=0;
-  fTriggerMask=0;
 
   // take MC truth for ZDC from Track Refs
   if(fIsMC){
